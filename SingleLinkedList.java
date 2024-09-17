@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class SingleLinkedList{
     private SingleLinked head;
 
@@ -155,7 +153,7 @@ public class SingleLinkedList{
         return temp1.data;
     }
     public void removeDuplicates(){
-        SingleLinked dum=head,temp=head;
+        SingleLinked dum=head;
         while(dum.next!=null){
             if(dum.data==dum.next.data){
                 dum.next=dum.next.next;
